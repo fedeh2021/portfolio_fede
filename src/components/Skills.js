@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles, Typography } from '@material-ui/core'
+import Technologies from './Technologies'
 
 
 const Skills = ({ title, dark, id }) => {
@@ -9,6 +10,7 @@ const Skills = ({ title, dark, id }) => {
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
       <div className={classes.sectionContent} id={id}>
         <Typography variant='h3'>{title}</Typography>
+        <Technologies />
       </div>
     </div>
   )
