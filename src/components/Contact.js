@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core'
-import { purple } from '@material-ui/core/colors'
 
 const Contact = ({ title, dark, id }) => {
   const classes = useStyles()
@@ -88,17 +87,24 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(4) 
     },
     '& button:hover': {
-      backgroundColor: purple[500],
+      backgroundColor: theme.palette.primary.main,
       color: '#fff',
     }
   },
   titleAndChoise: {
     '& h5': {
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(1),
     }
   },
   radioButtons: {
 
+  },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    '& input': {
+      marginBottom: theme.spacing(1)
+    }
   }
 }))
 
