@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/20210214_114250.png'
+import logo from '../images/periodico.png'
 import Timeline from '@material-ui/lab/Timeline'
 import { Typography, makeStyles, Paper } from '@material-ui/core'
 import TimelineItem from '@material-ui/lab/TimelineItem'

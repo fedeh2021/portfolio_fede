@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardMedia, Grid, Link, makeStyles, Typography } from '@material-ui/core'
-import { mockData } from '../mockData'
+import { noticeData } from '../noticeData'
 
 const MyWork = ({ title, dark, id }) => {
   const classes = useStyles()
@@ -9,14 +9,16 @@ const MyWork = ({ title, dark, id }) => {
       <Typography variant='h3'>{title}</Typography>
       <Grid container className={classes.gridContainer}>
         {
-          mockData.map(({ title, image, link }, index) => (
+          noticeData.map(({ title, image, link, date, newspaper }, index) => (
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Card className={classes.card} >
                 <CardMedia image={image} className={classes.cover} title='cover' />
                 <CardContent>
-                  <Link href={link} color='primary' target='_blank' rel='noopener noreferrer'>
+                  <Link href={link} color='secondary' target='_blank' rel='noopener noreferrer'>
                     {title}
                   </Link>
+                  <Typography className={classes.typography}>{date}</Typography>
+                  <Typography className={classes.typography}>{newspaper}</Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -53,6 +55,10 @@ const useStyles = makeStyles((theme) => ({
     height: 0,
     paddingTop: '56.25%',
   },
+  typography: {
+    fontSize: '0.9rem',
+    marginTop: theme.spacing(1)
+  }
 }))
 
 export default MyWork

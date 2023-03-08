@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Card, CardActions, CardContent, CardMedia, makeStyles, Typography } from '@material-ui/core'
-import profile from '../images/profile.png'
+import profile from '../images/profileFedericoHirsch.png'
 import TypeWriterEffect from 'react-typewriter-effect'
-import cv from '../images/CV Federico J Hirsch Veloso.pdf'
+import cv from '../images/CV Federico J Hirsch Veloso - Lic RRII.pdf'
 
 const About = ({ title, dark, id }) => {
   const classes = useStyles()
@@ -10,25 +10,22 @@ const About = ({ title, dark, id }) => {
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
       <div className={classes.sectionContent} id={id}>
-        <Typography variant='h3'>{title}</Typography>
+        <Typography variant='h3' className={classes.title}>{title}</Typography>
         <Card className={classes.card}>
-          <CardMedia image={profile} title='profile' className={classes.cardMedia}/>
+          <CardMedia image={profile} title='profile' className={classes.cardMedia} />
           <CardContent className={classes.cardContent}>
-            <TypeWriterEffect 
-            text='soy federico hirsch' 
-            textStyle={{fontSize: '2rem', fontWeight: '700px', color: 'tomato'}}
-            startDelay={100}
-            cursorColor='black'
-            typeSpedd={100}
+            <TypeWriterEffect
+              text='Hola! Soy Federico Hirsch Veloso'
+              textStyle={{ fontSize: '2rem', fontWeight: '700px', color: '#1e6495' }}
+              startDelay={100}
+              cursorColor='black'
+              typeSpedd={100}
             />
-            <TypeWriterEffect 
-            text='soy licenciado en relaciones internacionalies'
-            textStyle={{fontSize: '1.2rem', fontWeight: '500px'}}
-            startDelay={2500}
-            typeSpedd={100}
-            />
+            <Typography className={classes.subtitle}>
+              Soy licenciado en Relaciones Internacionales. Mi vocación por lo social y mi pasión por América Latina me motivaron a escribir distintas notas periodísticas acerca de la realidad política de la región.
+            </Typography>
             <Typography variant='h6' color='textSecondary'>
-              texto para rellenar con mi vida
+              Les comparto mis notas:
             </Typography>
           </CardContent>
           <CardActions>
@@ -63,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
   },
   cardMedia: {
-    width: '250px',
+    width: '550px',
     height: 'auto',
     objectFit: 'cover',
     borderRadius: '10px',
@@ -78,6 +75,14 @@ const useStyles = makeStyles((theme) => ({
       }
     }
   },
+  title: {
+    paddingTop: theme.spacing(2)
+  },
+  subtitle: {
+    fontSize: '1.2rem',
+    fontWeight: '500px',
+    paddingTop: theme.spacing(2)
+  },
   pdfButton: {
     position: 'absolute',
     bottom: '5rem',
@@ -86,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
       bottom: '2.5rem',
       right: '1rem'
     },
-    backgroundColor: 'red',
+    backgroundColor: '#1e6495',
     padding: theme.spacing(3),
     "&: hover": {
       backgroundColor: '#fff',
@@ -97,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: 700
     },
     "& a:hover": {
-      color: 'tomato'
+      color: '#1e6495'
     }
   },
 }))

@@ -1,35 +1,29 @@
 import React, { useState } from 'react'
 import { AppBar, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, Toolbar } from "@material-ui/core"
-import logo from "../images/20210214_114250.png"
+import logo from "../images/periodico.png"
 import { makeStyles } from '@material-ui/core'
 import { Link, animateScroll as scroll } from "react-scroll"
-import InfoTwoToneIcon from "@material-ui/icons/InfoTwoTone"
-import EmojiObjectsTwoToneIcon from "@material-ui/icons/EmojiObjectsTwoTone"
-import BuildTwoToneIcon from "@material-ui/icons/BuildTwoTone"
+import PersonIcon from "@material-ui/icons/Person"
 import ContactMailTwoToneIcon from "@material-ui/icons/ContactMailTwoTone"
 import MenuIcon from "@material-ui/icons/Menu"
 import CancelIcon from "@material-ui/icons/Cancel"
+import ComputerIcon from '@material-ui/icons/Computer'
 
 const links = [
   {
     id: "about",
-    text: "about me",
-    icon: <InfoTwoToneIcon fontSize='large'/>
-  },
-  {
-    id: "skills",
-    text: "skills",
-    icon: <EmojiObjectsTwoToneIcon fontSize='large'/>
+    text: "sobre mi",
+    icon: <PersonIcon fontSize='large' />
   },
   {
     id: "work",
-    text: "mywork",
-    icon: <BuildTwoToneIcon fontSize='large'/>
+    text: "mis notas",
+    icon: <ComputerIcon fontSize='large' />
   },
   {
     id: "contact",
     text: "contacto",
-    icon: <ContactMailTwoToneIcon fontSize='large'/>
+    icon: <ContactMailTwoToneIcon fontSize='large' />
   },
 ]
 
@@ -45,7 +39,7 @@ const Navbar = () => {
     <>
       <AppBar position='sticky' className={classes.root}>
         <Toolbar className={classes.toolbar}>
-          <img src={logo} className={classes.logo} alt="Logo" onClick={scrollToTop}/>
+          <img src={logo} className={classes.logo} alt="Logo" onClick={scrollToTop} />
           <List className={classes.menu} >
             {links.map(({ id, text }, index) => (
               <Link
@@ -67,7 +61,7 @@ const Navbar = () => {
       </AppBar>
       <Drawer anchor='right' open={open} onClose={() => setOpen(false)}>
         <IconButton onClick={() => setOpen(false)} className={classes.cancelIcon}>
-          <CancelIcon fontSize='large'/>
+          <CancelIcon fontSize='large' />
         </IconButton>
         <Divider />
         {links.map(({ id, text, icon }, index) => (
@@ -123,15 +117,15 @@ const useStyles = makeStyles((theme) => ({
     },
     "& a:hover": {
       cursor: 'pointer',
-      color: "tomato",
-      borderBottom: "3px solid tomato"
+      color: "#1e6495",
+      borderBottom: "3px solid #1e6495"
     }
   },
   menuButton: {
     display: 'none',
     [theme.breakpoints.down('sm')]: {
       display: 'block',
-      color: 'tomato',
+      color: '#1e6495',
       position: 'absolute',
       top: 0,
       right: 10
@@ -155,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: 'bold',
     },
     "& h5:hover": {
-      color: 'tomato',
+      color: '#1e6495',
       cursor: 'pointer',
     }
   }
