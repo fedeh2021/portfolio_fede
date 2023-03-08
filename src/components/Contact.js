@@ -1,51 +1,30 @@
-import React, { useState } from 'react'
-import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core'
+import React from 'react'
+import { Button, makeStyles, Paper, TextField, Typography } from '@material-ui/core'
+import {useForm} from 'react-hook-form'
 
 const Contact = ({ title, dark, id }) => {
   const classes = useStyles()
-  const [value, setValue] = useState('Say Hi')
+  const {register, handleSubmit, formState: {errors}} = useForm()
 
-  const handleChange = (e) => {
-    setValue(e.target.value)
+  const onSubmit = data => {
+    console.log(data)
   }
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}><div className={classes.sectionContent} id={id}>
-      <Typography variant='h3'>{title}</Typography>
+      <Typography className={classes.title} variant='h3'>{title}</Typography>
       <Paper className={classes.root} >
-        <div className={classes.titleAndChoise}>
-          <Typography variant='h5'>Contactame</Typography>
-          <div className={classes.radioButtons}>
-            <span>say hello</span>
-            <Radio
-              value='Say Hi'
-              checked={value === 'Say Hi'}
-              color='primary'
-              onChange={handleChange}
-            />
-            <span>get a quote</span>
-            <Radio
-              value='get a quote'
-              checked={value === 'get a quote'}
-              color='primary'
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-        <form className={classes.form} autoComplete='off'>
-          <TextField label='tu nombre' />
-          <TextField label='email' />
-          {
-            value === 'get a quote' ? (
-              <>
-                <TextField label='servicio necesario' />
-                <TextField label='estimated budget' />
-              </>
-            ) : null
-          }
-          <TextField label='tu mensaje' />
+        <Typography variant='h5'>Contactame</Typography>
+        <form className={classes.form} autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
+          <TextField label='Tu nombre' {...register('name', {required: true })}/>
+          {errors.name && <span>Este campo es requerido</span>}
+          <TextField label='Tu email' {...register('email', {required: true, pattern: /^\S+@\S+$/i })}/>
+          {errors.email?.type === 'required' && <span>Este campo es requerido</span>}
+          {errors.email?.type === 'pattern' && <span>Ingresa un email válido</span>}
+          <TextField label='Tu mensaje' {...register('message', {required: true })}/>
+          {errors.message && <span>Este campo es requerido</span>}
+          <Button type='submit' variant='contained'>Enviar</Button>
         </form>
-        <Button variant='contained'>Submit</Button>
       </Paper>
     </div>
     </div>
@@ -55,10 +34,6 @@ const Contact = ({ title, dark, id }) => {
 const useStyles = makeStyles((theme) => ({
   section: {
     minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   sectionDark: {
     background: "#333",
@@ -67,37 +42,29 @@ const useStyles = makeStyles((theme) => ({
   sectionContent: {
     maxWidth: "80vw",
     margin: '0 auto',
-    
   },
   root: {
     marginTop: theme.spacing(4),
-    background: 'tomato',
+    background: '#bcb7ab',
     color: '#fff',
-    fontSize: '1.2rem',
-    maxWidth: '500px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: theme.spacing(4),
     '& button': {
       backgroundColor: '#fff',
-      color: 'tomato',
+      color: '#1e6495',
       fontWeight: 900,
-      fontSize: '1.2rem',
-      marginTop: theme.spacing(4) 
+      fontSize: '1rem',
+      marginTop: theme.spacing(4)
     },
     '& button:hover': {
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: '#1e6495',
       color: '#fff',
     }
   },
-  titleAndChoise: {
-    '& h5': {
-      marginTop: theme.spacing(1),
-    }
-  },
-  radioButtons: {
-
+  title: {
+    paddingTop: theme.spacing(2),
   },
   form: {
     display: 'flex',
