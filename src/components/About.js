@@ -25,7 +25,7 @@ const About = ({ title, dark, id }) => {
               Soy licenciado en Relaciones Internacionales. Mi vocación por lo social y mi pasión por América Latina me motivaron a escribir distintas notas periodísticas acerca de la realidad política de la región.
             </Typography>
             <Typography variant='h6' color='textSecondary'>
-              Les comparto mis notas:
+              En la sección mis notas podrán encontrar los artículos y haciendo click podrán descargar mi curriculum:
             </Typography>
           </CardContent>
           <CardActions>
@@ -64,7 +64,10 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     objectFit: 'cover',
     borderRadius: '10px',
-    margin: theme.spacing(5)
+    margin: theme.spacing(5),
+    [theme.breakpoints.down('sm')]: {
+      margin: '0 auto'
+    }
   },
   cardContent: {
     marginTop: theme.spacing(2),
@@ -81,15 +84,21 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     fontSize: '1.2rem',
     fontWeight: '500px',
-    paddingTop: theme.spacing(2)
+    paddingTop: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   },
   pdfButton: {
     position: 'absolute',
-    bottom: '5rem',
+    bottom: '3.5rem',
     right: '4rem',
     [theme.breakpoints.down('sm')]: {
       bottom: '2.5rem',
-      right: '1rem'
+      right: '0.4rem'
+    },
+    [theme.breakpoints.down('md')]: {
+      bottom: '1rem'
     },
     backgroundColor: '#1e6495',
     padding: theme.spacing(3),
