@@ -3,11 +3,10 @@ import Navbar from './components/Navbar';
 import MyWork from './components/MyWork';
 import About from './components/About';
 import Contact from './components/Contact';
-import { purple } from '@material-ui/core/colors';
 
 const theme = createTheme({
   palette: {
-    primary: { main: purple[500] },
+    primary: { main: '#1e6495' },
     secondary: { main: '#333' }
   }
 })

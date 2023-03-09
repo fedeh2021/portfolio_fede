@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardMedia, Grid, Link, makeStyles, Typography } from '@material-ui/core'
+import { Card, CardContent, CardMedia, Grid, makeStyles, Typography } from '@material-ui/core'
 import { noticeData } from '../noticeData'
 
 const MyWork = ({ title, dark, id }) => {
@@ -14,9 +14,14 @@ const MyWork = ({ title, dark, id }) => {
               <Card className={classes.card} >
                 <CardMedia image={image} className={classes.cover} title='cover' />
                 <CardContent>
-                  <Link href={link} color='secondary' target='_blank' rel='noopener noreferrer'>
-                    {title}
-                  </Link>
+                  <Typography 
+                  component='a' 
+                  href={link} 
+                  target='_blank' 
+                  rel='noopener noreferrer' 
+                  className={classes.link}>
+                  {title}
+                  </Typography>
                   <Typography className={classes.typography}>{date}</Typography>
                   <Typography className={classes.typography}>{newspaper}</Typography>
                 </CardContent>
@@ -54,6 +59,11 @@ const useStyles = makeStyles((theme) => ({
   cover: {
     height: 0,
     paddingTop: '56.25%',
+  },
+  link: {
+    fontWeight: 'bold', 
+    textDecoration: 'none', 
+    color: '#333',
   },
   typography: {
     fontSize: '0.9rem',
