@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import profile from "../images/profileFedericoHirsch.png";
 import TypeWriterEffect from "react-typewriter-effect";
-import cv from "../images/CV Federico J Hirsch Veloso - Lic RRII.pdf";
+import cv from "../images/CV Federico J Hirsch Veloso.pdf";
 
 const About = ({ title, dark, id }) => {
   const classes = useStyles();

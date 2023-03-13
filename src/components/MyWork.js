@@ -1,43 +1,56 @@
-import React from 'react'
-import { Card, CardContent, CardMedia, Grid, makeStyles, Typography } from '@material-ui/core'
-import { noticeData } from '../noticeData'
+import React from "react";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Grid,
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
+import { noticeData } from "../noticeData";
 
 const MyWork = ({ title, dark, id }) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
-    <div className={`${classes.section} ${dark && classes.sectionDark}`}><div className={classes.sectionContent} id={id}>
-      <Typography variant='h3'>{title}</Typography>
-      <Grid container className={classes.gridContainer}>
-        {
-          noticeData.map(({ title, image, link, date, newspaper }, index) => (
+    <div className={`${classes.section} ${dark && classes.sectionDark}`}>
+      <div className={classes.sectionContent} id={id}>
+        <Typography variant="h3">{title}</Typography>
+        <Grid container className={classes.gridContainer}>
+          {noticeData.map(({ title, image, link, date, newspaper }, index) => (
             <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card className={classes.card} >
-                <CardMedia image={image} className={classes.cover} title='cover' />
+              <Card className={classes.card}>
+                <CardMedia
+                  image={image}
+                  className={classes.cover}
+                  title="cover"
+                />
                 <CardContent>
-                  <Typography 
-                  component='a' 
-                  href={link} 
-                  target='_blank' 
-                  rel='noopener noreferrer' 
-                  className={classes.link}>
-                  {title}
+                  <Typography
+                    component="a"
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.link}
+                  >
+                    {title}
                   </Typography>
                   <Typography className={classes.typography}>{date}</Typography>
-                  <Typography className={classes.typography}>{newspaper}</Typography>
+                  <Typography className={classes.typography}>
+                    {newspaper}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
-          ))
-        }
-      </Grid>
+          ))}
+        </Grid>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    minHeight: '100vh'
+    minHeight: "100vh",
   },
   sectionDark: {
     background: "#333",
@@ -45,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionContent: {
     maxWidth: "80vw",
-    margin: '0 auto',
+    margin: "0 auto",
     padding: theme.spacing(5),
   },
   gridContainer: {
@@ -58,17 +71,17 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     height: 0,
-    paddingTop: '56.25%',
+    paddingTop: "56.25%",
   },
   link: {
-    fontWeight: 'bold', 
-    textDecoration: 'none', 
-    color: '#333',
+    fontWeight: "bold",
+    textDecoration: "none",
+    color: "#333",
   },
   typography: {
-    fontSize: '0.9rem',
-    marginTop: theme.spacing(1)
-  }
-}))
+    fontSize: "0.9rem",
+    marginTop: theme.spacing(1),
+  },
+}));
 
-export default MyWork
+export default MyWork;
