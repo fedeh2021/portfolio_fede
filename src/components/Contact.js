@@ -81,7 +81,7 @@ const Contact = ({ title, dark, id }) => {
               label="Tu nombre"
               {...register("from_name", { required: true })}
             />
-            {errors.name && <span>Este campo es requerido</span>}
+            {errors.from_name && <span>Este campo es requerido</span>}
             <TextField
               label="Tu email"
               {...register("reply_to", {
@@ -89,10 +89,10 @@ const Contact = ({ title, dark, id }) => {
                 pattern: /^\S+@\S+$/i,
               })}
             />
-            {errors.email?.type === "required" && (
+            {errors.reply_to?.type === "required" && (
               <span>Este campo es requerido</span>
             )}
-            {errors.email?.type === "pattern" && (
+            {errors.reply_to?.type === "pattern" && (
               <span>Ingresa un email válido</span>
             )}
             <TextField
