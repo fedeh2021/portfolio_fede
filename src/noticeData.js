@@ -4,6 +4,7 @@ import protestasPeru from "../src/images/protestas_peru.jpg";
 import maduroPetro from "../src/images/maduro_y_petro.jpg";
 import fotoCumbre from "../src/images/foto_cumbre.jpg";
 import cumbreIberoamericana from "../src/images/cumbre_iberoamericana.jpg";
+import petroMano from "../src/images/petroMano.jpg"
 
 export const noticeData = [
   {
@@ -47,5 +48,12 @@ export const noticeData = [
     link: "https://www.perfil.com/noticias/opinion/cumbre-iberoamericana-una-nueva-oportunidad-perdida.phtml",
     date: "07/04/2023",
     newspaper: "Perfil",
+  },
+  {
+    title: 'Las reformas tributarias condicionan a los presidentes latinoamericanos',
+    image: petroMano,
+    link: 'https://www.perfil.com/noticias/internacional/las-reformas-tributarias-condicionan-a-los-presidentes-latinoamericanos.phtml',
+    date: '22/04/2023',
+    newspaper: 'Perfil',
   },
 ];
