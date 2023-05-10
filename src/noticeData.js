@@ -4,7 +4,8 @@ import protestasPeru from "../src/images/protestas_peru.jpg";
 import maduroPetro from "../src/images/maduro_y_petro.jpg";
 import fotoCumbre from "../src/images/foto_cumbre.jpg";
 import cumbreIberoamericana from "../src/images/cumbre_iberoamericana.jpg";
-import petroMano from "../src/images/petroMano.jpg"
+import petroMano from "../src/images/petroMano.jpg";
+import paraguayPres from "../src/images/paraguayPres.jpg";
 
 export const noticeData = [
   {
@@ -54,6 +55,13 @@ export const noticeData = [
     image: petroMano,
     link: 'https://www.perfil.com/noticias/internacional/las-reformas-tributarias-condicionan-a-los-presidentes-latinoamericanos.phtml',
     date: '22/04/2023',
+    newspaper: 'Perfil',
+  },
+  {
+    title: 'Paraguay: ¿continuidad o cambio?',
+    image: paraguayPres,
+    link: 'https://www.perfil.com/noticias/internacional/paraguay-continuidad-o-cambio.phtml',
+    date: '30/04/2023',
     newspaper: 'Perfil',
   },
 ];
