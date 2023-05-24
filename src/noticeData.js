@@ -6,6 +6,8 @@ import fotoCumbre from "../src/images/foto_cumbre.jpg";
 import cumbreIberoamericana from "../src/images/cumbre_iberoamericana.jpg";
 import petroMano from "../src/images/petroMano.jpg";
 import paraguayPres from "../src/images/paraguayPres.jpg";
+import renunciaLasso from '../src/images/renunciaLasso.jpg';
+import dinaLasso from '../src/images/dinaLasso.jpg';
 
 export const noticeData = [
   {
@@ -64,4 +66,18 @@ export const noticeData = [
     date: '30/04/2023',
     newspaper: 'Perfil',
   },
+  {
+    title: 'La inestabilidad andina',
+    image: dinaLasso,
+    link: 'https://www.perfil.com/noticias/opinion/la-inestabilidad-andina.phtml',
+    date: '13/05/2023',
+    newspaper: 'Perfil',
+  },
+  {
+    title: 'Espejo de la inestabilidad latinoamericana',
+    image: renunciaLasso,
+    link: 'https://www.perfil.com/noticias/opinion/espejo-de-la-inestabilidad-latinoamericana.phtml',
+    date: '20/05/2023',
+    newspaper: 'Perfil',
+  }
 ];
