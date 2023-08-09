@@ -10,6 +10,8 @@ import renunciaLasso from '../src/images/renunciaLasso.jpg';
 import dinaLasso from '../src/images/dinaLasso.jpg';
 import cumbreMercosur from '../src/images/cumbreMercosur.jpg';
 import cumbreBrasil from '../src/images/cumbreBrasil.jpg';
+import peruAgosto from '../src/images/peruAgosto.jpg';
+
 
 export const noticeData = [
   {
@@ -94,6 +96,13 @@ export const noticeData = [
     image: cumbreMercosur,
     link: 'https://www.perfil.com/noticias/opinion/mercosur-la-misma-historia-de-siempre.phtml',
     date: '08/07/2023',
+    newspaper: 'Perfil',
+  },
+  {
+    title: 'Entre el caos y la permanencia',
+    image: peruAgosto,
+    link: 'https://www.perfil.com/noticias/opinion/entre-el-caos-y-la-permanencia.phtml',
+    date: '29/07/2023',
     newspaper: 'Perfil',
   },
 ];
