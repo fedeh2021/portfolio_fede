@@ -12,6 +12,7 @@ import cumbreMercosur from '../src/images/cumbreMercosur.jpg';
 import cumbreBrasil from '../src/images/cumbreBrasil.jpg';
 import peruAgosto from '../src/images/peruAgosto.jpg';
 import eleccionesEcuador from '../src/images/eleccionesEcuador.jpg';
+import fronteraGuyana from '../src/images/fronteraGuyana.jpg';
 
 
 export const noticeData = [
@@ -112,5 +113,12 @@ export const noticeData = [
     link: 'https://eleconomista.com.ar/internacional/ecuador-concurre-urnas-inseguridad-incertidumbre-n67226',
     date: '12/10/2023',
     newspaper: 'El Economista',
+  },
+  {
+    title: 'Qué hay detrás del conflicto',
+    image: fronteraGuyana,
+    link: 'https://www.perfil.com/noticias/internacional/que-hay-detras-del-conflicto.phtml',
+    date: '09/12/2023',
+    newspaper: 'Perfil',
   },
 ];
