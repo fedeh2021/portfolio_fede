@@ -13,6 +13,7 @@ import cumbreBrasil from '../src/images/cumbreBrasil.jpg';
 import peruAgosto from '../src/images/peruAgosto.jpg';
 import eleccionesEcuador from '../src/images/eleccionesEcuador.jpg';
 import fronteraGuyana from '../src/images/fronteraGuyana.jpg';
+import bukele from '../src/images/bukele.jpg';
 
 
 export const noticeData = [
@@ -121,4 +122,11 @@ export const noticeData = [
     date: '09/12/2023',
     newspaper: 'Perfil',
   },
+  {
+    title: 'El Caribe y Centroamérica, a elecciones',
+    image: bukele,
+    link: 'https://www.perfil.com/noticias/opinion/el-caribe-y-centroamerica-a-elecciones.phtml',
+    date: '20/01/24',
+    newspaper: 'Perfil',
+  }
 ];
