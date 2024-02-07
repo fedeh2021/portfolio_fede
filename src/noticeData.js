@@ -14,6 +14,7 @@ import peruAgosto from '../src/images/peruAgosto.jpg';
 import eleccionesEcuador from '../src/images/eleccionesEcuador.jpg';
 import fronteraGuyana from '../src/images/fronteraGuyana.jpg';
 import bukele from '../src/images/bukele.jpg';
+import bukeleDictador from '../src/images/bukeleDictador.jpg';
 
 
 export const noticeData = [
@@ -128,5 +129,12 @@ export const noticeData = [
     link: 'https://www.perfil.com/noticias/opinion/el-caribe-y-centroamerica-a-elecciones.phtml',
     date: '20/01/24',
     newspaper: 'Perfil',
-  }
+  },
+  {
+    title: '(Mención) El dilema Salvador',
+    image: bukeleDictador,
+    link: 'https://www.perfil.com/noticias/columnistas/el-dilema-salvador.phtml',
+    date: '04/02/24',
+    newspaper: 'Perfil',
+  },
 ];
