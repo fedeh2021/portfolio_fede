@@ -17,6 +17,7 @@ import ContactMailTwoToneIcon from "@material-ui/icons/ContactMailTwoTone";
 import MenuIcon from "@material-ui/icons/Menu";
 import CancelIcon from "@material-ui/icons/Cancel";
 import ComputerIcon from "@material-ui/icons/Computer";
+import RadioIcon from '@material-ui/icons/Radio';
 
 const links = [
   {
@@ -28,6 +29,11 @@ const links = [
     id: "work",
     text: "mis notas",
     icon: <ComputerIcon fontSize="large" />,
+  },
+  {
+    id: 'interview',
+    text: 'mis entrevistas',
+    icon: <RadioIcon fontSize='large' />,
   },
   {
     id: "contact",
