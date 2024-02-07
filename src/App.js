@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import MyWork from './components/MyWork';
 import About from './components/About';
 import Contact from './components/Contact';
+import MyInterview from './components/MyInterview';
 
 const theme = createTheme({
   palette: {
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <About title='Sobre Mi' id='about' dark />
         <MyWork title='Mis Notas' id='work' dark />
+        <MyInterview title='Mis Entrevistas' id='work' dark />
         <Contact title='Contacto' id='contact' dark={false} />
       </div>
     </MuiThemeProvider>
