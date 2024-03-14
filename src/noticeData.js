@@ -15,6 +15,7 @@ import eleccionesEcuador from '../src/images/eleccionesEcuador.jpg';
 import fronteraGuyana from '../src/images/fronteraGuyana.jpg';
 import bukele from '../src/images/bukele.jpg';
 import bukeleDictador from '../src/images/bukeleDictador.jpg';
+import venezuelaCaos from '../src/images/venezuelaCaos.jpg';
 
 
 export const noticeData = [
@@ -137,4 +138,11 @@ export const noticeData = [
     date: '04/02/24',
     newspaper: 'Perfil',
   },
+  {
+    title: 'Semanas oscuras de la democracia venezolana',
+    image: venezuelaCaos,
+    link: 'https://www.perfil.com/noticias/internacional/semanas-oscuras-de-la-democracia-venezolana.phtml',
+    date: '23/02/24',
+    newspaper: 'Perfil',
+  }
 ];
