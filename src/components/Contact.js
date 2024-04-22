@@ -22,7 +22,7 @@ const Contact = ({ title, dark, id }) => {
 
   const onSubmit = async (data) => {
     console.log(data);
-    const serviceId = "service_0y9oxqa";
+    const serviceId = "service_i5a120c";
     const templateId = "template_ufz6pds";
     const userId = "7iGnqHQrT21OOvVAL";
 
