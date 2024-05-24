@@ -1,4 +1,5 @@
 import perfilRadio from '../src/images/perfilRadio.png'
+import situacionAmlat from '../src/images/situacionAmlat.jpg';
 import santiagoPeña from '../src/images/santiagoPeña.jpg'
 import mileiEspaña from '../src/images/mileiEspaña.jpg'
 import ecuadorMexico from '../src/images/ecuadorMexico.jpg'
@@ -20,7 +21,7 @@ export const interviewData = [
     },
     {
         title: 'Situación General en América Latina',
-        image: perfilRadio,
+        image: situacionAmlat,
         link: 'https://ar.radiocut.fm/radiostation/perfil/listen/2023/12/31/11/02/00/',
         date: '31/12/23',
         media: 'Radio Perfil',
