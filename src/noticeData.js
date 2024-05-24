@@ -16,6 +16,8 @@ import fronteraGuyana from '../src/images/fronteraGuyana.jpg';
 import bukele from '../src/images/bukele.jpg';
 import bukeleDictador from '../src/images/bukeleDictador.jpg';
 import venezuelaCaos from '../src/images/venezuelaCaos.jpg';
+import panamaMulino from '../src/images/panamaMulino.jpg';
+import lulaChina from '../src/images/lulaChina.jpg';
 
 
 export const noticeData = [
@@ -144,5 +146,19 @@ export const noticeData = [
     link: 'https://www.perfil.com/noticias/internacional/semanas-oscuras-de-la-democracia-venezolana.phtml',
     date: '23/02/24',
     newspaper: 'Perfil',
-  }
+  },
+  {
+    title: 'América Latina: la ilegalidad al poder',
+    image: panamaMulino,
+    link: 'https://www.perfil.com/noticias/internacional/america-latina-la-ilegalidad-al-poder.phtml',
+    date: '04/05/24',
+    newspaper: 'Perfil',
+  },
+  {
+    title: 'América Latina made in China',
+    image: lulaChina,
+    link: 'https://www.perfil.com/noticias/internacional/america-latina-made-in-china.phtml',
+    date: '18/05/24',
+    newspaper: 'Perfil',
+  },
 ];
