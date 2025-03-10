@@ -18,6 +18,12 @@ import bukeleDictador from '../src/images/bukeleDictador.jpg';
 import venezuelaCaos from '../src/images/venezuelaCaos.jpg';
 import panamaMulino from '../src/images/panamaMulino.jpg';
 import lulaChina from '../src/images/lulaChina.jpg';
+import asambleaGeneral from '../src/images/asambleaGeneral.jpg';
+import eleccionesUruguay from '../src/images/eleccionesUruguay.png';
+import g20Brasil from '../src/images/g20Brasil.png';
+import resumen2024 from '../src/images/resumen2024.png';
+import elecciones2025 from '../src/images/elecciones2025.png';
+import migracionTrump from '../src/images/migracionTrump.jpg';
 
 
 export const noticeData = [
@@ -160,5 +166,46 @@ export const noticeData = [
     link: 'https://www.perfil.com/noticias/internacional/america-latina-made-in-china.phtml',
     date: '18/05/24',
     newspaper: 'Perfil',
+  },
+  {
+    title: 'Pasó la Asamblea de las Naciones Unidas: ¿qué queda para América Latina?',
+    image: asambleaGeneral,
+    link: 'https://iky.b07.myftpupload.com/politica/paso-la-asamblea-de-las-naciones-unidas-que-queda-para-america-latina/',
+    date: '15/10/24',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Elecciones en Uruguay: Todo lo que tenes que saber',
+    image: eleccionesUruguay,
+    link: 'https://iky.b07.myftpupload.com/politica/elecciones-en-uruguay-todo-lo-que-tenes-que-saber/',
+    date: '26/10/24',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Lo que dejo el G20 para América Latina',
+    image: g20Brasil,
+    link: 'https://iky.b07.myftpupload.com/politica/lo-que-dejo-el-g20-para-america-latina/',
+    date: '1/12/24',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: '2024 en América Latina: elecciones, crisis y el desafío democrático',
+    image: resumen2024,
+    link: 'https://iky.b07.myftpupload.com/mundo/2024-en-america-latina-elecciones-crisis-y-el-desafio-democratico/',
+    date: '1/1/25',
+    newspaper: 'El Gobierno',
+  },{
+    title: 'América Latina en 2025: elecciones en la región de las turbulencias constantes',
+    image: elecciones2025,
+    link: 'https://iky.b07.myftpupload.com/politica/america-latina-en-2025-elecciones-en-la-region-de-las-turbulencias-constantes/',
+    date: '8/1/24',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Donald Trump endurece la política migratoria en su regreso a la Casa Blanca',
+    image: migracionTrump,
+    link: 'https://iky.b07.myftpupload.com/mundo/donald-trump-endurece-la-politica-migratoria-en-su-regreso-a-la-casa-blanca/',
+    date: '19/02/24',
+    newspaper: 'El Gobierno',
   },
 ];
