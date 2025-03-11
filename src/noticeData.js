@@ -24,6 +24,8 @@ import g20Brasil from '../src/images/g20Brasil.png';
 import resumen2024 from '../src/images/resumen2024.png';
 import elecciones2025 from '../src/images/elecciones2025.png';
 import migracionTrump from '../src/images/migracionTrump.jpg';
+import primariasUruguay from '../src/images/primariasUruguay.jpg';
+import eleccionesVenezuela from '../src/images/eleccionesVenezuela.jpg';
 
 
 export const noticeData = [
@@ -165,6 +167,20 @@ export const noticeData = [
     image: lulaChina,
     link: 'https://www.perfil.com/noticias/internacional/america-latina-made-in-china.phtml',
     date: '18/05/24',
+    newspaper: 'Perfil',
+  },
+  {
+    title: 'Primarias en el oasis democrático de América Latina',
+    image: primariasUruguay,
+    link: 'https://www.perfil.com/noticias/opinion/primarias-en-el-oasis-democratico-de-america-latina.phtml',
+    date: '30/06/24',
+    newspaper: 'Perfil',
+  },
+  {
+    title: 'No es cualquier país',
+    image: eleccionesVenezuela,
+    link: 'https://www.perfil.com/noticias/internacional/no-es-cualquier-pais.phtml',
+    date: '27/07/24',
     newspaper: 'Perfil',
   },
   {
