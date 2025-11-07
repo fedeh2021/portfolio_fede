@@ -26,7 +26,13 @@ import elecciones2025 from '../src/images/elecciones2025.png';
 import migracionTrump from '../src/images/migracionTrump.jpg';
 import primariasUruguay from '../src/images/primariasUruguay.jpg';
 import eleccionesVenezuela from '../src/images/eleccionesVenezuela.jpg';
-
+import bolSinEvo from '../src/images/bolSinEvo.jpg';
+import presOnu from '../src/images/presOnu.png';
+import caidaDina from '../src/images/caidaDina.png';
+import banderaEcuador from '../src/images/banderaEcuador.jpg';
+import colombiaPetro from '../src/images/colombiaPetro.jpg';
+import esequiboMaduro from '../src/images/esequiboMaduro.jpg';
+import vicepresidentes from '../src/images/vicepresidentes.jpg';
 
 export const noticeData = [
   {
@@ -201,27 +207,76 @@ export const noticeData = [
     title: 'Lo que dejo el G20 para América Latina',
     image: g20Brasil,
     link: 'https://iky.b07.myftpupload.com/politica/lo-que-dejo-el-g20-para-america-latina/',
-    date: '1/12/24',
+    date: '01/12/24',
     newspaper: 'El Gobierno',
   },
   {
     title: '2024 en América Latina: elecciones, crisis y el desafío democrático',
     image: resumen2024,
     link: 'https://iky.b07.myftpupload.com/mundo/2024-en-america-latina-elecciones-crisis-y-el-desafio-democratico/',
-    date: '1/1/25',
+    date: '01/01/25',
     newspaper: 'El Gobierno',
   },{
     title: 'América Latina en 2025: elecciones en la región de las turbulencias constantes',
     image: elecciones2025,
     link: 'https://iky.b07.myftpupload.com/politica/america-latina-en-2025-elecciones-en-la-region-de-las-turbulencias-constantes/',
-    date: '8/1/24',
+    date: '08/01/25',
     newspaper: 'El Gobierno',
   },
   {
     title: 'Donald Trump endurece la política migratoria en su regreso a la Casa Blanca',
     image: migracionTrump,
     link: 'https://iky.b07.myftpupload.com/mundo/donald-trump-endurece-la-politica-migratoria-en-su-regreso-a-la-casa-blanca/',
-    date: '19/02/24',
+    date: '19/02/25',
     newspaper: 'El Gobierno',
   },
+  {
+    title: 'Ecuador elige presidente entre la violencia y el posible regreso del correísmo',
+    image: banderaEcuador,
+    link: 'https://diarioelgobierno.ar/noticia/413-ecuador-elige-presidente-entre-la-violencia-y-el-posible-regreso-del-correismo',
+    date: '12/04/25',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Venezuela desafía a la Corte Internacional de Justicia y profundiza el conflicto por el Esequibo',
+    image: esequiboMaduro,
+    link: 'https://diarioelgobierno.ar/noticia/150-venezuela-desafia-a-la-corte-internacional-de-justicia-y-profundiza-el-conflicto-por-el-esequibo',
+    date: '23/05/25',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Entre la consulta y las balas: la Colombia polarizada de Petro',
+    image: colombiaPetro,
+    link: 'https://diarioelgobierno.ar/noticia/209-entre-la-consulta-y-las-balas-la-colombia-polarizada-de-petro',
+    date: '25/06/25',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Vicepresidentes: ¿piezas clave o bombas de tiempo del Poder Ejecutivo?',
+    image: vicepresidentes,
+    link: 'https://diarioelgobierno.ar/noticia/251-vicepresidentes-piezas-clave-o-bombas-de-tiempo-del-poder-ejecutivo',
+    date: '24/07/25',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Bolivia, a las urnas sin Evo ni Arce: una elección huérfana que definirá la década',
+    image: bolSinEvo,
+    link: 'https://diarioelgobierno.ar/noticia/280-bolivia-a-las-urnas-sin-evo-ni-arce-una-eleccion-huerfana-que-definira-la-decada',
+    date: '15/08/25',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: '¿Qué nos deja a América Latina esta Asamblea de la ONU?',
+    image: presOnu,
+    link: 'https://diarioelgobierno.ar/noticia/359-que-nos-deja-a-america-latina-esta-asamblea-de-la-onu',
+    date: '26/09/25',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'La caída de Dina Boluarte: Perú vuelve a tropezar con su propia inestabilidad',
+    image: caidaDina,
+    link: 'https://diarioelgobierno.ar/noticia/383-la-caida-de-dina-boluarte-peru-vuelve-a-tropezar-con-su-propia-inestabilidad',
+    date: '09/10/25',
+    newspaper: 'El Gobierno',
+  }
 ];
