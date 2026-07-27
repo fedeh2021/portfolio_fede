@@ -245,5 +245,12 @@ export const noticeData = [
     link: 'https://diarioelgobierno.ar/noticia/383-la-caida-de-dina-boluarte-peru-vuelve-a-tropezar-con-su-propia-inestabilidad',
     date: '09/10/2025',
     newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Crisis en Bolivia: bloqueos, golpismo y la democracia en jaque a seis meses del nuevo gobierno',
+    image: images.crisisBolivia2026,
+    link: 'https://elgobierno.news/internacional/crisis-en-bolivia-bloqueos-golpismo-y-la-democracia-en-jaque-a-seis-meses-del-nuevo-gobierno/',
+    date: '27/05/2026',
+    newspaper: 'El Gobierno',
   }
 ];

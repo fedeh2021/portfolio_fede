@@ -33,6 +33,7 @@ import banderaEcuador from "./images/banderaEcuador.jpg";
 import colombiaPetro from "./images/colombiaPetro.jpg";
 import esequiboMaduro from "./images/esequiboMaduro.jpg";
 import vicepresidentes from "./images/vicepresidentes.jpg";
+import crisisBolivia2026 from './images/crisisBolivia2026.jpeg'
 
 export const images = {
   zonaAndina,
@@ -69,5 +70,6 @@ export const images = {
   banderaEcuador,
   colombiaPetro,
   esequiboMaduro,
-  vicepresidentes
+  vicepresidentes,
+  crisisBolivia2026
 };
