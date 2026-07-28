@@ -35,7 +35,14 @@ import esequiboMaduro from "./images/esequiboMaduro.jpg";
 import vicepresidentes from "./images/vicepresidentes.jpg";
 import crisisBolivia2026 from './images/crisisBolivia2026.jpeg'
 import cubaOscuras from './images/cubaOscuras.jpg'
-import peruCrisis from './images/peruCrisis.jpg'
+import peruCrisis from './images/peruCrisis.jpg';
+import banderaEcu from './images/banderaEcu.jpg';
+import chileHonduras from './images/chileHonduras.png';
+import caidaMaduro from './images/caidaMaduro.jpg';
+import eleccionesChile from './images/eleccionesChile.jpg';
+
+
+
 
 
 export const images = {
@@ -76,5 +83,9 @@ export const images = {
   vicepresidentes,
   crisisBolivia2026,
   cubaOscuras,
-  peruCrisis
+  peruCrisis,
+  banderaEcu,
+  chileHonduras,
+  caidaMaduro,
+  eleccionesChile
 };
