@@ -34,6 +34,9 @@ import colombiaPetro from "./images/colombiaPetro.jpg";
 import esequiboMaduro from "./images/esequiboMaduro.jpg";
 import vicepresidentes from "./images/vicepresidentes.jpg";
 import crisisBolivia2026 from './images/crisisBolivia2026.jpeg'
+import cubaOscuras from './images/cubaOscuras.jpg'
+import peruCrisis from './images/peruCrisis.jpg'
+
 
 export const images = {
   zonaAndina,
@@ -71,5 +74,7 @@ export const images = {
   colombiaPetro,
   esequiboMaduro,
   vicepresidentes,
-  crisisBolivia2026
+  crisisBolivia2026,
+  cubaOscuras,
+  peruCrisis
 };

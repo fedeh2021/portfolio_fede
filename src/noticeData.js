@@ -247,6 +247,20 @@ export const noticeData = [
     newspaper: 'El Gobierno',
   },
   {
+    title: 'Perú: el país donde gobernar se convirtió en un cargo transitorio',
+    image: images.peruCrisis,
+    link: 'https://diarioelgobierno.ar/noticia/667-peru-el-pais-donde-gobernar-se-convirtio-en-un-cargo-transitorio',
+    date: '01/03/2026',
+    newspaper: 'El Gobierno',
+  },
+  {
+    title: 'Cuba a oscuras: el colapso energético que vuelve a tensar el tablero entre Washington, Moscú y Teherán',
+    image: images.cubaOscuras,
+    link: 'https://diarioelgobierno.ar/noticia/709-cuba-a-oscuras-el-colapso-energetico-que-vuelve-a-tensar-el-tablero-entre-washington-moscu-y-teheran',
+    date: '30/03/2026',
+    newspaper: 'El Gobierno',
+  },
+  {
     title: 'Crisis en Bolivia: bloqueos, golpismo y la democracia en jaque a seis meses del nuevo gobierno',
     image: images.crisisBolivia2026,
     link: 'https://elgobierno.news/internacional/crisis-en-bolivia-bloqueos-golpismo-y-la-democracia-en-jaque-a-seis-meses-del-nuevo-gobierno/',
